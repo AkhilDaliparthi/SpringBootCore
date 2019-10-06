@@ -1,4 +1,4 @@
-package com.core.server;
+package com.server;
 
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
@@ -10,7 +10,7 @@ public class Server implements WebServerFactoryCustomizer<ConfigurableServletWeb
 	@Override
 	public void customize(ConfigurableServletWebServerFactory factory) {
 		// TODO Auto-generated method stub
-		factory.setContextPath("/Lavada");
+		factory.setContextPath("/app");
 	}
 
 	
