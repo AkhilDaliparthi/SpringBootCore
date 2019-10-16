@@ -1,16 +1,12 @@
 package com.daoImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import com.dao.userDetailsServiceDao;
-import com.repository.UserRepository;
 import com.model.UserDetails;
+import com.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Component
 public class UserRepositoryImpl implements userDetailsServiceDao {
