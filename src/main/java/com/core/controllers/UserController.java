@@ -30,7 +30,6 @@ public class UserController {
 	@GetMapping("/getUsersInfo")
     public List<User> getUserDetails(
     		@RequestParam(value = "user_name") String userName, @RequestParam (value = "first_name") String firstName) {
-        userDetailsDAO.getPersonList();
 		List<User> users = new ArrayList<>();
         User user = User.builder().username(userName).firstName(firstName).build();
         users.add(user);
